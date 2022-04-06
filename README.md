@@ -1,6 +1,6 @@
 # react-native-combine-images
 
-Combine images Vertically or horizontally
+A React Native combine image module is for combining images into two dimensions i.e vertical and horizontal.
 
 ## Installation
 
