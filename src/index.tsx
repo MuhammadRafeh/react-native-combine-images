@@ -9,14 +9,14 @@ const LINKING_ERROR =
 const CombineImages = NativeModules.CombineImages
   ? NativeModules.CombineImages
   : new Proxy(
-      {},
-      {
-        get() {
-          throw new Error(LINKING_ERROR);
-        },
-      }
-    );
+    {},
+    {
+      get() {
+        throw new Error(LINKING_ERROR);
+      },
+    }
+  );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return CombineImages.multiply(a, b);
+export function combineImages(imagesPath: Array<string>, direction: string, imagesWidth: number, imagesHeight: number, saveToGallery: boolean): Promise<number> {
+  return CombineImages.combineImages(imagesPath, direction, imagesWidth, imagesHeight, saveToGallery);
 }
