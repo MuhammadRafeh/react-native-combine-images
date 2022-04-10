@@ -40,7 +40,7 @@ public class CombineImagesModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void multiply(ReadableArray imagesPath, String direction, Double imagesWidth, Double imagesHeight, Boolean saveToGallery,  Promise promise) {
+    public void combineImages(ReadableArray imagesPath, String direction, Double imagesWidth, Double imagesHeight, Boolean saveToGallery,  Promise promise) {
         try {
             ArrayList<Bitmap> imagesBitmaps = new ArrayList<Bitmap>();
 
